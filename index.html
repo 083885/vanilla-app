@@ -4,109 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-   <body>
-  <div class="weather-app">
+<body>
+    <body cz-shortcut-listen="true"><div class="isimo-sezulu">
+  
   <header>
-      <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city..." required="" class="search-form-input" id="search-form-input">
-        <input type="submit" value="Search" class="search-form-button">
-      </form>
+  <form class="search-form" id="search-form">
+    <input type="search" placeholder="Enter a city.." required="" id="search-form-input" class="search-form-input">
+    <input type="submit" value="Search" required="" class="search-button">
+  </form>
   </header>
-    <main>
-      <div class="weather-app-data">
-        <h1 class="current-city" id="current-city">Sydney</h1>
-        <h2 class="current-time" id="current-time">Tuesday, 09:47</h2>
-        <p class="weather-app-details">
-           <span id="description">few clouds</span>
-            <br>
-            Humidity: <strong id="humidity">59%</strong>, Wind: <strong id="wind-speed">7.72km/h</strong>
-        </p>
-        <span class="current-temperature">
-          <div class="temperature-icon" id="temperature-icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" class="temperature-icon"></div>
-          <div class="temperature-value" id="temperature-value">23</div>
-          <div class="temperature-unit">°C</div>
+  <main>
+    <div class="weather-data">
+    <div>
+    <h1 id="city">Johanesburg</h1>
+    <p>
+      <span id="time">Tue 10:33</span>, <span id="description">clear sky</span>
+      <br>
+      Humidity: <strong id="humidity">49%</strong>
+      <br>
+      Wind: <strong id="speed-of-wind">4.63km/h</strong>
+    </p>
+    </div>
+  
+    <div>
+      <div class="weather-app-temp-container">
+      <div>
+        <div id="icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-icon"></div>
+      </div>
+      <div class="weather-temperature" id="temperature">26</div>
+    <div class="weather-app-unit">°C</div>
+    </div>
+    </div>
+    </div>
+    <div class="weather-forecast" id="forecast"><div class="weather-forecast-day">
+      <div class="weather-forecast-date">Wed</div>
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-forecast-icon">
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"><strong>26</strong>°
         </span>
-      </div>
-      <div class="forecast-heading">
-        5-DAY FORECAST
-      </div>
-      <div class="forecast" id="forecast">
-    <div class="row">
-        <div class="col-2">
-            <div class="forecast-day">
-              Tue
-            </div>
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
-            <div class="forecast-temp">
-              <span class="forecast-temp-max">23°</span> 
-              <span class="forecast-temp-min">20°</span>
-            </div>
+        <span class="weather-forecast-temperature-min">19°</span>
         </div>
-    </div>
+        </div>
+      <div class="weather-forecast-day">
+      <div class="weather-forecast-date">Thu</div>
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"><strong>25</strong>°
+        </span>
+        <span class="weather-forecast-temperature-min">20°</span>
+        </div>
+        </div>
+      <div class="weather-forecast-day">
+      <div class="weather-forecast-date">Fri</div>
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="weather-forecast-icon">
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"><strong>23</strong>°
+        </span>
+        <span class="weather-forecast-temperature-min">19°</span>
+        </div>
+        </div>
+      <div class="weather-forecast-day">
+      <div class="weather-forecast-date">Sat</div>
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" class="weather-forecast-icon">
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"><strong>22</strong>°
+        </span>
+        <span class="weather-forecast-temperature-min">18°</span>
+        </div>
+        </div>
+      <div class="weather-forecast-day">
+      <div class="weather-forecast-date">Sun</div>
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" class="weather-forecast-icon">
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"><strong>22</strong>°
+        </span>
+        <span class="weather-forecast-temperature-min">18°</span>
+        </div>
+        </div>
+      </div>  
+  </main>
 
-    <div class="row">
-        <div class="col-2">
-            <div class="forecast-day">
-              Wed
-            </div>
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" class="forecast-icon">
-            <div class="forecast-temp">
-              <span class="forecast-temp-max">29°</span> 
-              <span class="forecast-temp-min">18°</span>
-            </div>
-        </div>
-    </div>
+  <footer>
+    This project coded by
+    <a href="https://github.com/Zee363" target="_blank">khongelani claudia khosa</a> is
+    <a href="https://github.com/Zee363/my-weather-project" target="_blank">open-sourced on Github</a> and is hosted by  
+    <a href="https://nhlapo-weather-app.netlify.app/" target="_blank">Netlify.</a>
+  </footer>
+  <script src="index.js"></script>
 
-    <div class="row">
-        <div class="col-2">
-            <div class="forecast-day">
-              Thu
-            </div>
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
-            <div class="forecast-temp">
-              <span class="forecast-temp-max">32°</span> 
-              <span class="forecast-temp-min">23°</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-2">
-            <div class="forecast-day">
-              Fri
-            </div>
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
-            <div class="forecast-temp">
-              <span class="forecast-temp-max">31°</span> 
-              <span class="forecast-temp-min">23°</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-2">
-            <div class="forecast-day">
-              Sat
-            </div>
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
-            <div class="forecast-temp">
-              <span class="forecast-temp-max">22°</span> 
-              <span class="forecast-temp-min">20°</span>
-            </div>
-        </div>
-    </div>
 </div>
-    </main>
-    <footer>
-      Coded by
-        <a href="https://github.com/083885/weatherapp" target="_blank">khongelani claudia khosa</a>, is open-souced on 
-        <a href="https://github.com/083885/weatherapp" target="_blank">GitHub</a> and hosted on 
-        <a href="" target="_blank">Netlify</a>
-      </footer>
-    </div>
-
-
+</body>
 </body>
 </html>
