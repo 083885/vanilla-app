@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   <body>
+  <div class="weather-app">
+  <header>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required="" class="search-form-input" id="search-form-input">
+        <input type="submit" value="Search" class="search-form-button">
+      </form>
+  </header>
+    <main>
+      <div class="weather-app-data">
+        <h1 class="current-city" id="current-city">Sydney</h1>
+        <h2 class="current-time" id="current-time">Tuesday, 09:47</h2>
+        <p class="weather-app-details">
+           <span id="description">few clouds</span>
+            <br>
+            Humidity: <strong id="humidity">59%</strong>, Wind: <strong id="wind-speed">7.72km/h</strong>
+        </p>
+        <span class="current-temperature">
+          <div class="temperature-icon" id="temperature-icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" class="temperature-icon"></div>
+          <div class="temperature-value" id="temperature-value">23</div>
+          <div class="temperature-unit">°C</div>
+        </span>
+      </div>
+      <div class="forecast-heading">
+        5-DAY FORECAST
+      </div>
+      <div class="forecast" id="forecast">
+    <div class="row">
+        <div class="col-2">
+            <div class="forecast-day">
+              Tue
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">23°</span> 
+              <span class="forecast-temp-min">20°</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="forecast-day">
+              Wed
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" class="forecast-icon">
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">29°</span> 
+              <span class="forecast-temp-min">18°</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="forecast-day">
+              Thu
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">32°</span> 
+              <span class="forecast-temp-min">23°</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="forecast-day">
+              Fri
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">31°</span> 
+              <span class="forecast-temp-min">23°</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="forecast-day">
+              Sat
+            </div>
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" class="forecast-icon">
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">22°</span> 
+              <span class="forecast-temp-min">20°</span>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <footer>
+      Coded by
+        <a href="https://github.com/083885/weatherapp" target="_blank">khongelani claudia khosa</a>, is open-souced on 
+        <a href="https://github.com/083885/weatherapp" target="_blank">GitHub</a> and hosted on 
+        <a href="" target="_blank">Netlify</a>
+      </footer>
+    </div>
+
+
+</body>
+</html>
